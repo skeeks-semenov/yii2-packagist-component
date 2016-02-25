@@ -10,12 +10,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require "2amigos/yii2-packagist-component" "*"
+php composer.phar require "skeeks/yii2-packagist-component" "*"
 ```
 or add
 
 ```json
-"2amigos/yii2-packagist-component" : "*"
+"skeeks/yii2-packagist-component" : "*"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -47,7 +47,8 @@ var_dump($response->body);
 ```
 
 
-> [![2amigOS!](http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png)](http://www.2amigos.us)
+___
 
-<i>Web development has never been so fun!</i>
-[www.2amigos.us](http://www.2amigos.us)
+> [![skeeks!](https://gravatar.com/userimage/74431132/13d04d83218593564422770b616e5622.jpg)](http://skeeks.com)
+<i>SkeekS CMS (Yii2) — fast, simple, effective!</i>
+[skeeks.com](http://skeeks.com) | [cms.skeeks.com](http://cms.skeeks.com) | [marketplace.cms.skeeks.com](http://marketplace.cms.skeeks.com)
