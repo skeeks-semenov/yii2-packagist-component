@@ -16,6 +16,11 @@ use yii\helpers\ArrayHelper;
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
  * @package dosamigos\packagist
+ *
+ * @property Version[] 		$versions
+ * @property Maintainer[] 	$maintainers
+ * @property Downloads 		$downloads
+ * @property string 		$repository
  */
 class Package extends Result
 {
@@ -82,6 +87,8 @@ class Package extends Result
 	 */
 	private $_readme;
 
+
+
 	/**
 	 * Returns the readme information of the package
 	 * @param string|null $username if added, basic authentication login will be applied to increment the rate limit
@@ -90,6 +97,7 @@ class Package extends Result
 	 */
 	public function getReadme($username = null, $password = null)
 	{
+		//TODO: Добавить проверку, чтобы репозиторий был гитхаб + не обязательно имя на гитхабе совпадает с именем на packagist
 		if($this->_readme == null && $this) {
 			$config = [];
 			if($username && $password) {
